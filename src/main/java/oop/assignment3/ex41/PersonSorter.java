@@ -60,7 +60,7 @@ public class PersonSorter {
     public static void InputGetter()
     {
 
-        File file = new File("src/main/java/oop/assignment3/ex41/exercise41_input.txt");
+        File file = new File("C:\\Users\\joshu\\IdeaProjects\\untitled\\ashby-cop3330-assignment3\\exercise41_input.txt");
         Scanner sc = new Scanner(file);
 
 
