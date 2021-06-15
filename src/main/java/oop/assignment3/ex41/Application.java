@@ -19,6 +19,9 @@ public class Application {
         FileReader file1 = new FileReader("src/main/java/oop/assignment3/ex41/exercise41_input.txt");
         Scanner sc = new Scanner(file1);
 
+
+    }
+}
         /* this worked temporarily for some reason
         try{
             FileReader file1 = new FileReader("src/main/java/oop/assignment3/ex41/exercise41_input.txt");
@@ -65,5 +68,3 @@ catch(Exception e){
             System.out.println(fileNames);
         //System.out.println(System.getProperty("user.dir"));
 */
-    }
-}

@@ -20,24 +20,7 @@ public class PersonSorter {
 
         return myList;
     }
-/*
-    public static Employee[] EmployeeArrayMaker() {
-        Employee[] EmployeeArray = new Employee[6];
-        Employee John = new Employee("John", "Johnson", "Manager", "2016-12-31");
-        Employee Tou = new Employee("Tou", "Xiong", "Software Engineer", "2016-10-05");
-        Employee Michaela = new Employee("Michaela", "Michaelson", "District Manager", "2015-12-19");
-        Employee Jake = new Employee("Jake", "Jacobson", "Programmer", "");
-        Employee Jacquelyn = new Employee("Jacquelyn", "Jackson", "DBA", "");
-        Employee Sally = new Employee("Sally", "Webber", "Web Developer", "2015-12-18");
-        EmployeeArray[0] = John;
-        EmployeeArray[1] = Tou;
-        EmployeeArray[2] = Michaela;
-        EmployeeArray[3] = Jake;
-        EmployeeArray[4] = Jacquelyn;
-        EmployeeArray[5] = Sally;
-        return EmployeeArray;
-    }
-*/
+
 
     public static List<Map<String, String>>  SortEmployeeMapList(List<Map<String, String>> myList)
     {
@@ -79,7 +62,15 @@ public class PersonSorter {
 
         File file = new File("src/main/java/oop/assignment3/ex41/exercise41_input.txt");
         Scanner sc = new Scanner(file);
-       // FileReader filereader = new FileReader("exercise41_input.txt");
+
+
+    }
+
+
+
+
+}
+// FileReader filereader = new FileReader("exercise41_input.txt");
         /*
         URL path = PersonSorter.class.getResource("exercise41_input.txt");
         File f = new File(path.getFile());
@@ -92,7 +83,7 @@ public class PersonSorter {
         //System.out.printf("%s", absPath);
      */
 
-       //Scanner sc = new Scanner(filereader);
+//Scanner sc = new Scanner(filereader);
        /*
 
         try {
@@ -104,10 +95,3 @@ public class PersonSorter {
         //Path absPath = path.toAbsolutePath();
         //System.out.printf("%s", absPath);
 */
-
-    }
-
-
-
-
-}
