@@ -1,0 +1,28 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class Application{
+-scanner
+main()
+}
+
+class person{
+-First Name
+-LastName
+
+Map()
+GetLastname()
+GetFirstName()
+}
+
+class personSorter{
+
+InputTaker()
+Outputtime()
+personarraymaker()
+ListMaker()
+ListSorter()
+
+
+}
+@enduml
