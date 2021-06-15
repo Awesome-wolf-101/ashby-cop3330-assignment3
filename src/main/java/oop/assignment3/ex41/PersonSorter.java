@@ -76,6 +76,7 @@ public class PersonSorter {
 
     public static void InputGetter()
     {
+
         File file = new File("src/main/java/oop/assignment3/ex41/exercise41_input.txt");
         Scanner sc = new Scanner(file);
        // FileReader filereader = new FileReader("exercise41_input.txt");
@@ -102,10 +103,10 @@ public class PersonSorter {
         //Path path = Paths.get("exercise41_input.txt");
         //Path absPath = path.toAbsolutePath();
         //System.out.printf("%s", absPath);
-
+*/
 
     }
-    */
+
 
 
 
