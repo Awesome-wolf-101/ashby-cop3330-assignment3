@@ -4,6 +4,7 @@
 class Application{
 -scanner
 -personSorter
+-filereader
 main()
 }
 
@@ -17,11 +18,11 @@ GetLastname()
 GetFirstName()
 }
 
-class personSorter{
+class BasicDataParser{
 
 
 Outputtime()
-ListSorter()
+
 
 
 }

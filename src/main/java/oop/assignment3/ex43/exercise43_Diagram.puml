@@ -1,0 +1,25 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class Application{
+-websitegenerator
+}
+
+class WebsiteGenerator{
+-inputstring1
+-inputstring2
+-inputstring3
+-inputstring4
+-Pathname1
+-Pathname
+-file1
+
+
+
+InputTime()
+JsDirectoryMaker()
+CSSDirectoryMaker()
+HTMLDirectoryAndFileMaker()
+}
+
+@enduml

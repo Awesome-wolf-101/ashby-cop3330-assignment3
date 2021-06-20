@@ -9,23 +9,11 @@ import java.io.File;
 import java.util.Scanner;
 
 public class PersonSorter {
-    public static List<Map<String, String>> ListMaker(Person[] PersonArray) {
-        List<Map<String, String>> myList = new ArrayList<Map<String, String>>();
-        for (int i = 0; i < PersonArray.length; i++) {
-            Map<String, String> tempmap = new HashMap<String, String>();
-            Person tempperson = PersonArray[i];
-            tempmap = tempperson.getMap();
-            myList.add(tempmap);
-        }
-
-        return myList;
-    }
-
-
-    public static List<Map<String, String>>  SortEmployeeMapList(List<Map<String, String>> myList)
+    //sort a list of people
+    public static List<Person>  SortPersonMapList(List<Person> myList)
     {
-        for (int i = 0; i < myList.size(); i++) {
-            for (int j = 0; j < myList.size(); j++) {
+                //sort this person list, but change the comparator to take into account
+                //first and last name
                 Collections.sort(myList, new Comparator() {
 
                     public int compare(Object o1, Object o2) {
@@ -37,61 +25,40 @@ public class PersonSorter {
                         return p1.getFirstName().compareToIgnoreCase(p2.getFirstName());
                     }
                 });
-            }
-
-        }
+                //return the new list
         return myList;
     }
-
-    public static String OutPutTime(List<Map<String, String>> myList)
+//Output the new list to a string
+    public static String OutPutTime(List<Person> myList, int NumNames)
     {
-        String OutputString = "Name                | Position          | Separation Date" + "\n--------------------|-------------------|----------------";
+        //print out the begining/top of thestring with the number of names
+        String OutputString = "Total of " + NumNames +" names" + "\n-----------------";
+        //go through the list and add them to the output string
         for (int i=0; i<myList.size(); i++) {
-            String str1 = myList.get(i).get("FirstName") + " " +myList.get(i).get("LastName");
-            String str4 = String.format("%-20s|", str1);
-            String str2 = String.format(" %-18s|", myList.get(i).get("Position"));
-            String str3 = String.format(" %-20s",  myList.get(i).get("SeparationDate"));
-            String OutputStringAdder ="\n" + str4 + str2 + str3;
-            OutputString += OutputStringAdder;
+            String str1 ="\n" + myList.get(i).getLastName() +", "+ myList.get(i).getFirstName();
+            OutputString += str1;
         }
+        //return the output string
         return OutputString;
     }
+    //writes a string to an input file
+    public static void FileWriter(String InputString){
+        //make a new file by getting my current directory and adding the name
+        //of the output file in this case "exercise41_output.txt"
+        File file4 = new File( System.getProperty("user.dir") + "exercise41_output.txt");
+        //use try catch ro create a new file then, write to the file and close the file writer
+        try {
+            boolean newFile = file4.createNewFile();
+            FileWriter myWriter = new FileWriter("exercise41_output.txt");
+            myWriter.write(InputString);
+            myWriter.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
-    public static void InputGetter()
-    {
-
-        File file = new File("C:\\Users\\joshu\\IdeaProjects\\untitled\\ashby-cop3330-assignment3\\exercise41_input.txt");
-        Scanner sc = new Scanner(file);
 
 
     }
-
-
 
 
 }
-// FileReader filereader = new FileReader("exercise41_input.txt");
-        /*
-        URL path = PersonSorter.class.getResource("exercise41_input.txt");
-        File f = new File(path.getFile());
-        BufferedReader reader = new BufferedReader(new FileReader(f));
-
-        //BufferedReader br = new BufferedReader();
-        //String line = null;
-        //Path path = Paths.get("exercise41_input.txt");
-        //Path absPath = path.toAbsolutePath();
-        //System.out.printf("%s", absPath);
-     */
-
-//Scanner sc = new Scanner(filereader);
-       /*
-
-        try {
-            Scanner sc = new Scanner(filereader);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        //Path path = Paths.get("exercise41_input.txt");
-        //Path absPath = path.toAbsolutePath();
-        //System.out.printf("%s", absPath);
-*/

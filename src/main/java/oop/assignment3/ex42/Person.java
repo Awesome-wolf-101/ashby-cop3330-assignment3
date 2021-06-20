@@ -1,25 +1,28 @@
-package oop.assignment3.ex41;
+package oop.assignment3.ex42;
+
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class Person {
-    //make two new variables for the first and last names and a map to retrieve them
+    //variable
     String Firstname;
     String Lastname;
-
+    String Salary;
 
     private Map<String, String> map;
 
-    //make a constructor for person by putting the first and last name in the map
-    public Person(String firstName, String lastName) {
+    //constructor for the person class
+    //also adds all the variables to the map
+    public Person(String firstName, String lastName, String Salary) {
         map = new HashMap<>();
         map.put("FirstName", firstName);
         map.put("LastName", lastName);
+        map.put("Salary", Salary);
 
     }
 
-    //make getter methods here
+    //getter methods
     public Map<String, String> getMap() {
         return map;
     }
@@ -30,4 +33,9 @@ public class Person {
     public String getFirstName() {
         return map.get("FirstName");
     }
+
+    public String getSalary() {
+        return map.get("Salary");
+    }
 }
+
