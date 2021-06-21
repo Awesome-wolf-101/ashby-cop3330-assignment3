@@ -3,6 +3,8 @@
 
 class Application{
 -websitegenerator
+
+main()
 }
 
 class WebsiteGenerator{

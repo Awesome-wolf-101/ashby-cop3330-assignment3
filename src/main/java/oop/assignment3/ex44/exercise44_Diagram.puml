@@ -2,7 +2,12 @@
 'https://plantuml.com/sequence-diagram
 
 class Application{
--websitegenerator
+-GsonConverter
+-JsonItemClass
+-jsonconverter
+-searchstring
+
+main()
 }
 
 class GsonConverter{

@@ -4,6 +4,9 @@
 class Application{
 -scanner
 -personSorter
+-filereader
+-numnames
+
 main()
 }
 

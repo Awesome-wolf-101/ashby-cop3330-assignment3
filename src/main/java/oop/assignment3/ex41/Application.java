@@ -1,3 +1,7 @@
+/*
+ *  UCF COP3330 Summer 2021 Assignment 3 Solution
+ *  Copyright 2021 Joshua Ashby
+ */
 package oop.assignment3.ex41;
 
 import java.io.*;

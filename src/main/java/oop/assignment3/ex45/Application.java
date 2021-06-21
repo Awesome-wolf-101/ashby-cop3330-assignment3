@@ -1,6 +1,8 @@
+/*
+ *  UCF COP3330 Summer 2021 Assignment 3 Solution
+ *  Copyright 2021 Joshua Ashby
+ */
 package oop.assignment3.ex45;
-
-
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

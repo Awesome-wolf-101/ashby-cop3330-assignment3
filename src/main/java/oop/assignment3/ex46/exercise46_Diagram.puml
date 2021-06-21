@@ -9,8 +9,10 @@ class WordFrequencyFinder{
 
 
 
-WordReplacer()
-FileWriter()
+WordFrequencyFinder()
+WordFrequencyPrinter()
+CreateSpecialString()
+sortByValue()
 
 }
 

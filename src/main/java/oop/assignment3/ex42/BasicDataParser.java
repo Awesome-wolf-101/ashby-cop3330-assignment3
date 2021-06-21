@@ -1,3 +1,7 @@
+/*
+ *  UCF COP3330 Summer 2021 Assignment 3 Solution
+ *  Copyright 2021 Joshua Ashby
+ */
 package oop.assignment3.ex42;
 
 import oop.assignment3.ex42.Person;
@@ -10,15 +14,15 @@ public class BasicDataParser {
     public static String OutPutTime(List<Person> myList)
     {
         // format the topp of the string by adding the labels and bottom bar
-        String strx = String.format("%-20s", "Last ");
-        String stry = String.format(" %-20s", "First" );
-        String strz = String.format(" %-20s", "Salary");
-        String OutPutString = ""+ strx + stry + strz + "\n------------------------------------------------";
+        String strx = String.format("%-10s", "Last ");
+        String stry = String.format(" %-10s", "First" );
+        String strz = String.format(" %-10s", "Salary");
+        String OutPutString = ""+ strx + stry + strz + "\n----------------------------";
         //add all the elements inside the list using string format to the output string
         for (int i=0; i<myList.size(); i++) {
-            String str4 = String.format("%-20s", myList.get(i).getLastName() );
-            String str2 = String.format(" %-20s", myList.get(i).getFirstName());
-            String str3 = String.format(" %-20s", myList.get(i).getSalary());
+            String str4 = String.format("%-10s", myList.get(i).getLastName() );
+            String str2 = String.format(" %-10s", myList.get(i).getFirstName());
+            String str3 = String.format(" %-10s", myList.get(i).getSalary());
             String OutputStringAdder = "\n" + str4 + str2 + str3;
             OutPutString += OutputStringAdder;
         }
