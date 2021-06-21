@@ -2,30 +2,30 @@
 'https://plantuml.com/sequence-diagram
 
 class Application{
--scanner
--personSorter
--filereader
--personlist
 
-main()
++main()
 }
 
-class person{
--First Name
--LastName
--map<String,String>
+class Person{
+-String FirstName
+-String LastName
+-String Salary
+-map<String,String> map
 
-GetMap()
-GetLastname()
-GetFirstName()
++GetMap()
++GetLastname()
++GetFirstName()
++GetSalary()
 }
 
 class BasicDataParser{
 
 
-Outputtime()
++OutPutTime(List<Person> myList)
 
 
 
 }
+Application o-> BasicDataParser
+BasicDataParser o-> Person
 @enduml

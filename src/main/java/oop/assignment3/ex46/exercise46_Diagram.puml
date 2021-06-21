@@ -2,19 +2,19 @@
 'https://plantuml.com/sequence-diagram
 
 class Application{
-main()
++main()
 }
 
 class WordFrequencyFinder{
 
 
 
-WordFrequencyFinder()
-WordFrequencyPrinter()
-CreateSpecialString()
-sortByValue()
++WordFrequencyFinder(String InputString)
++WordFrequencyPrinter(Map<String, Integer> WordMap)
++CreateSpecialString(int NumSpecialChar)
++sortByValue(Map<String, Integer> hm)
 
 }
 
-
+Application o->WordFrequencyFinder
 @enduml

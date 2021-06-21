@@ -2,35 +2,32 @@
 'https://plantuml.com/sequence-diagram
 
 class Application{
--GsonConverter
--JsonItemClass
--jsonconverter
--searchstring
 
-main()
++main()
 }
 
 class GsonConverter{
 
 
 
-deserializeJsonFile()
-StringCutter()
-FindItem()
-OutPutTime()
++deserializeJsonFile( String GeneralInfo)
++StringCutter( String InputString)
++FindItem( List<JsonItemClass> items, String SearchString)
++OutPutTime( JsonItemClass item)
 }
 
 class JsonItemClass{
--name
--price
--quantity
+-String name
+-Double price
+-int quantity
 
 
 
-getName()
-getPrice()
-getQuantity()
++getName()
++getPrice()
++getQuantity()
 
 }
-
+Application o->  GsonConverter
+GsonConverter o-> JsonItemClass
 @enduml

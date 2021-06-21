@@ -2,26 +2,26 @@
 'https://plantuml.com/sequence-diagram
 
 class Application{
--websitegenerator
 
-main()
++main()
 }
 
 class WebsiteGenerator{
--inputstring1
--inputstring2
--inputstring3
--inputstring4
--Pathname1
--Pathname
--file1
+ -Scanner in
+-String  inputString1;
+ -String  inputString2;
+ -String  inputString3;
+ -String  inputString4;
+ -String Pathname1
+ -String Pathname
+ -File file1
 
 
-
-InputTime()
-JsDirectoryMaker()
-CSSDirectoryMaker()
-HTMLDirectoryAndFileMaker()
++InputTime()
++JsDirectoryMaker()
++CSSDirectoryMaker()
++HTMLDirectoryAndFileMaker()
 }
 
+Application o-> WebsiteGenerator
 @enduml

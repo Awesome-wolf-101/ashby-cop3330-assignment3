@@ -2,20 +2,18 @@
 'https://plantuml.com/sequence-diagram
 
 class Application{
--filereader
--scanner
--wordfinder
-main()
+
++main()
 }
 
 class WordFinder{
 
 
 
-WordReplacer()
-FileWriter()
++ WordReplacer(String InputString)
++FileWriter(String InputString, String NewFileName)
 
 }
 
-
+Application o-> WordFinder
 @enduml
